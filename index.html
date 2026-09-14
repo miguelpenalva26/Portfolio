@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miguel Penalva Caro · Software Engineer</title>
+<meta name="description" content="Portfolio de Miguel Penalva Caro, desarrollador junior full-stack. BSc (Hons) Software Engineering, York St John University.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">MP<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Software Engineer · Junior</p>
+        <h1>Miguel Penalva Caro</h1>
+        <p class="hero-lead">
+          Desarrollador full-stack recién graduado, con experiencia construyendo aplicaciones
+          web y móvil en proyectos académicos y en una empresa real. Me interesa especialmente
+          el desarrollo full-stack y aplicar la tecnología a problemas concretos.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/profile.jpg" alt="Foto de Miguel Penalva Caro" width="220" height="220">
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          Graduado en BSc (Hons) Software Engineering por la York St John University (Reino Unido),
+          con una base técnica previa consolidada a través del Grado Superior en Desarrollo de
+          Aplicaciones Multiplataforma (EUSA — Cámara de Comercio de Sevilla). He construido
+          aplicaciones full-stack tanto en proyectos académicos como durante unas prácticas en
+          empresa, siempre dentro de equipos de desarrollo.
+        </p>
+        <p class="about-text">
+          Me adapto con facilidad a tecnologías y entornos nuevos, y disfruto especialmente
+          descomponer un problema técnico hasta encontrar una solución que funcione de verdad.
+          Fuera del código, la pesca, la navegación y el gimnasio ocupan buena parte de mi tiempo —
+          la disciplina que exige el deporte es algo que también aplico al trabajo.
+        </p>
+      </div>
+
+      <h3 class="subsection-title">Stack técnico</h3>
+      <ul class="skills">
+        <li>Full Stack</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Kotlin</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>SQL / MySQL</li>
+        <li>HTML5 / CSS3</li>
+        <li>REST APIs</li>
+        <li>Git / GitHub</li>
+        <li>Docker</li>
+        <li>Flutter / Dart</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+
+      <div class="projects">
+
+        <article class="project-card">
+          <div class="project-tag-bar">2026 · Proyecto Final de Grado</div>
+          <h3>Sistema de Reservas de Instalaciones Deportivas</h3>
+          <p class="project-stack">Flutter · Django REST Framework · Python · SQLite</p>
+          <video class="project-video" controls preload="metadata" playsinline>
+            <source src="assets/video/sports-booking-demo.mp4" type="video/mp4">
+          </video>
+          <p>
+            Sistema full-stack de reservas de instalaciones deportivas, con validación en el
+            backend para evitar reservas duplicadas. Incluye un mecanismo en Python que analiza
+            datos meteorológicos en tiempo real (API de OpenWeatherMap) para recomendar
+            automáticamente la pista disponible más adecuada según las condiciones previstas.
+          </p>
+          <p>
+            Evaluado con la metodología Design Science Research, con un 100% de éxito en la
+            detección de conflictos de reserva.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag-bar">York St John University</div>
+          <h3>Restaurant Tracker Mobile App</h3>
+          <p class="project-stack">Flutter · Dart · SQLite</p>
+          <video class="project-video" controls preload="metadata" playsinline>
+            <source src="assets/video/restaurant-tracker-demo.mp4" type="video/mp4">
+          </video>
+          <p>
+            Aplicación Android para registrar visitas a restaurantes y valorar comidas.
+            Autenticación segura mediante hash de contraseñas SHA-256 y login biométrico por
+            huella dactilar, con base de datos local aislada por usuario.
+          </p>
+          <p>
+            Suite de tests automatizados completa (unitarios, integración y end-to-end) y
+            accesibilidad implementada con Flutter Semantics. Calificación obtenida: 98/100.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag-bar">Advanced Web Development · York St John University</div>
+          <h3>Restaurant Booking System</h3>
+          <p class="project-stack">JavaScript · Node.js · Express · MySQL</p>
+          <video class="project-video" controls preload="metadata" playsinline>
+            <source src="assets/video/booking-system-demo.mp4" type="video/mp4">
+          </video>
+          <p>
+            API REST para la gestión de reservas de un restaurante, con backend en Node.js,
+            Express y MySQL. Asigna automáticamente la mesa más pequeña disponible que se
+            ajuste al número de comensales y que esté libre en la fecha y hora solicitadas.
+          </p>
+          <p>
+            Endpoints completos para crear, editar, listar y eliminar reservas y mesas, con
+            frontend en JavaScript.
+          </p>
+          <p class="project-links">
+            <a href="https://melodious-dasik-d7ba77.netlify.app/" target="_blank" rel="noopener">Ver demo en vivo →</a>
+            <a href="https://github.com/miguelpenalva26/RestaurantBookingSystem" target="_blank" rel="noopener">Código en GitHub →</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag-bar">Mar – Jun 2025 · Prácticas en empresa</div>
+          <h3>Desarrollo Full-Stack — Indexa Geodata</h3>
+          <p class="project-stack">Flutter · Docker</p>
+          <p>
+            Prácticas como desarrollador full-stack en Indexa Geodata. Trabajé como parte del
+            equipo de desarrollo en una aplicación web y móvil construida con Flutter,
+            desplegada con Docker y actualmente en producción.
+          </p>
+          <p>
+            Colaboré activamente en la implementación técnica del producto dentro de un equipo
+            de desarrollo real.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="https://github.com/miguelpenalva26" target="_blank" rel="noopener">Ver más en GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section">
+    <div class="container">
+      <h2 class="section-title">Experiencia</h2>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-date">Mar – Jun 2025</div>
+          <div class="timeline-content">
+            <h3>Desarrollador Full-Stack (Prácticas) — Indexa Geodata</h3>
+            <p>
+              Desarrollo de una aplicación web y móvil en Flutter, desplegada con Docker y
+              actualmente en producción. Trabajé como parte del equipo de desarrollo,
+              colaborando activamente en la implementación técnica del producto.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>Campus 42 — Telefónica</h3>
+            <p>
+              Participante en un campus intensivo de programación organizado por Telefónica
+              (Málaga), centrado en resolución de problemas y trabajo en equipo bajo presión.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formacion" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Formación</h2>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-date">2026</div>
+          <div class="timeline-content">
+            <h3>BSc (Hons) Software Engineering</h3>
+            <p>York St John University — Reino Unido</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date">2023 – 2025</div>
+          <div class="timeline-content">
+            <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <p>EUSA — Cámara de Comercio de Sevilla</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date">2010 – 2021</div>
+          <div class="timeline-content">
+            <h3>Educación británica previa</h3>
+            <p>British School de Córdoba y British School de Sevilla</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="cv-download">
+        <a href="assets/cv/CV_Miguel_Penalva_Caro_ES.pdf" class="btn btn-outline" download>Descargar CV (ES)</a>
+        <a href="assets/cv/CV_Miguel_Penalva_Caro_EN.pdf" class="btn btn-outline" download>Download CV (EN)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact-lead">¿Quieres hablar de una oportunidad o de alguno de estos proyectos? Escríbeme.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:miguelpenalva26@gmail.com">miguelpenalva26@gmail.com</a></li>
+        <li><a href="tel:+34635492392">+34 635 492 392</a></li>
+        <li><a href="https://github.com/miguelpenalva26" target="_blank" rel="noopener">github.com/miguelpenalva26</a></li>
+        <li>Sevilla, España</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Miguel Penalva Caro</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
