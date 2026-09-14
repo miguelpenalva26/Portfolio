@@ -8,22 +8,23 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-lang="es">
 
 <header class="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="logo">MP<span>.</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-aria="nav.toggle" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#formacion">Formación</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+      <a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a>
+      <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
+      <a href="#experiencia" data-i18n="nav.experiencia">Experiencia</a>
+      <a href="#formacion" data-i18n="nav.formacion">Formación</a>
+      <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
   </div>
 </header>
 
@@ -32,36 +33,36 @@
   <section id="inicio" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">Software Engineer · Junior</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Software Engineer · Junior</p>
         <h1>Miguel Penalva Caro</h1>
-        <p class="hero-lead">
+        <p class="hero-lead" data-i18n="hero.lead">
           Desarrollador full-stack recién graduado, con experiencia construyendo aplicaciones
           web y móvil en proyectos académicos y en una empresa real. Me interesa especialmente
           el desarrollo full-stack y aplicar la tecnología a problemas concretos.
         </p>
         <div class="hero-actions">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
+          <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta.primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline" data-i18n="hero.cta.outline">Contactar</a>
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/img/profile.jpg" alt="Foto de Miguel Penalva Caro" width="220" height="220">
+        <img src="assets/img/profile.jpg" alt="Foto de Miguel Penalva Caro" width="220" height="220" data-i18n-alt="hero.photo.alt">
       </div>
     </div>
   </section>
 
   <section id="sobre-mi" class="section">
     <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
+      <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
       <div class="about-grid">
-        <p class="about-text">
+        <p class="about-text" data-i18n="about.p1">
           Graduado en BSc (Hons) Software Engineering por la York St John University (Reino Unido),
           con una base técnica previa consolidada a través del Grado Superior en Desarrollo de
           Aplicaciones Multiplataforma (EUSA — Cámara de Comercio de Sevilla). He construido
           aplicaciones full-stack tanto en proyectos académicos como durante unas prácticas en
           empresa, siempre dentro de equipos de desarrollo.
         </p>
-        <p class="about-text">
+        <p class="about-text" data-i18n="about.p2">
           Me adapto con facilidad a tecnologías y entornos nuevos, y disfruto especialmente
           descomponer un problema técnico hasta encontrar una solución que funcione de verdad.
           Fuera del código, la pesca, la navegación y el gimnasio ocupan buena parte de mi tiempo —
@@ -69,7 +70,7 @@
         </p>
       </div>
 
-      <h3 class="subsection-title">Stack técnico</h3>
+      <h3 class="subsection-title" data-i18n="about.stack.title">Stack técnico</h3>
       <ul class="skills">
         <li>Full Stack</li>
         <li>Python</li>
@@ -90,24 +91,24 @@
 
   <section id="proyectos" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Proyectos</h2>
+      <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
 
       <div class="projects">
 
         <article class="project-card">
-          <div class="project-tag-bar">2026 · Proyecto Final de Grado</div>
-          <h3>Sistema de Reservas de Instalaciones Deportivas</h3>
+          <div class="project-tag-bar" data-i18n="project1.tag">2026 · Proyecto Final de Grado</div>
+          <h3 data-i18n="project1.title">Sistema de Reservas de Instalaciones Deportivas</h3>
           <p class="project-stack">Flutter · Django REST Framework · Python · SQLite</p>
           <video class="project-video" controls preload="metadata" playsinline>
             <source src="assets/video/sports-booking-demo.mp4" type="video/mp4">
           </video>
-          <p>
+          <p data-i18n="project1.desc1">
             Sistema full-stack de reservas de instalaciones deportivas, con validación en el
             backend para evitar reservas duplicadas. Incluye un mecanismo en Python que analiza
             datos meteorológicos en tiempo real (API de OpenWeatherMap) para recomendar
             automáticamente la pista disponible más adecuada según las condiciones previstas.
           </p>
-          <p>
+          <p data-i18n="project1.desc2">
             Evaluado con la metodología Design Science Research, con un 100% de éxito en la
             detección de conflictos de reserva.
           </p>
@@ -120,49 +121,49 @@
           <video class="project-video" controls preload="metadata" playsinline>
             <source src="assets/video/restaurant-tracker-demo.mp4" type="video/mp4">
           </video>
-          <p>
+          <p data-i18n="project2.desc1">
             Aplicación Android para registrar visitas a restaurantes y valorar comidas.
             Autenticación segura mediante hash de contraseñas SHA-256 y login biométrico por
             huella dactilar, con base de datos local aislada por usuario.
           </p>
-          <p>
+          <p data-i18n="project2.desc2">
             Suite de tests automatizados completa (unitarios, integración y end-to-end) y
             accesibilidad implementada con Flutter Semantics. Calificación obtenida: 98/100.
           </p>
         </article>
 
         <article class="project-card">
-          <div class="project-tag-bar">Advanced Web Development · York St John University</div>
+          <div class="project-tag-bar" data-i18n="project3.tag">Advanced Web Development · York St John University</div>
           <h3>Restaurant Booking System</h3>
           <p class="project-stack">JavaScript · Node.js · Express · MySQL</p>
           <video class="project-video" controls preload="metadata" playsinline>
             <source src="assets/video/booking-system-demo.mp4" type="video/mp4">
           </video>
-          <p>
+          <p data-i18n="project3.desc1">
             API REST para la gestión de reservas de un restaurante, con backend en Node.js,
             Express y MySQL. Asigna automáticamente la mesa más pequeña disponible que se
             ajuste al número de comensales y que esté libre en la fecha y hora solicitadas.
           </p>
-          <p>
+          <p data-i18n="project3.desc2">
             Endpoints completos para crear, editar, listar y eliminar reservas y mesas, con
             frontend en JavaScript.
           </p>
           <p class="project-links">
-            <a href="https://melodious-dasik-d7ba77.netlify.app/" target="_blank" rel="noopener">Ver demo en vivo →</a>
-            <a href="https://github.com/miguelpenalva26/RestaurantBookingSystem" target="_blank" rel="noopener">Código en GitHub →</a>
+            <a href="https://melodious-dasik-d7ba77.netlify.app/" target="_blank" rel="noopener" data-i18n="project3.link.demo">Ver demo en vivo →</a>
+            <a href="https://github.com/miguelpenalva26/RestaurantBookingSystem" target="_blank" rel="noopener" data-i18n="project3.link.code">Código en GitHub →</a>
           </p>
         </article>
 
         <article class="project-card">
-          <div class="project-tag-bar">Mar – Jun 2025 · Prácticas en empresa</div>
-          <h3>Desarrollo Full-Stack — Indexa Geodata</h3>
+          <div class="project-tag-bar" data-i18n="project4.tag">Mar – Jun 2025 · Prácticas en empresa</div>
+          <h3 data-i18n="project4.title">Desarrollo Full-Stack — Indexa Geodata</h3>
           <p class="project-stack">Flutter · Docker</p>
-          <p>
+          <p data-i18n="project4.desc1">
             Prácticas como desarrollador full-stack en Indexa Geodata. Trabajé como parte del
             equipo de desarrollo en una aplicación web y móvil construida con Flutter,
             desplegada con Docker y actualmente en producción.
           </p>
-          <p>
+          <p data-i18n="project4.desc2">
             Colaboré activamente en la implementación técnica del producto dentro de un equipo
             de desarrollo real.
           </p>
@@ -171,20 +172,20 @@
       </div>
 
       <div class="projects-cta">
-        <a href="https://github.com/miguelpenalva26" target="_blank" rel="noopener">Ver más en GitHub →</a>
+        <a href="https://github.com/miguelpenalva26" target="_blank" rel="noopener" data-i18n="projects.cta">Ver más en GitHub →</a>
       </div>
     </div>
   </section>
 
   <section id="experiencia" class="section">
     <div class="container">
-      <h2 class="section-title">Experiencia</h2>
+      <h2 class="section-title" data-i18n="experience.title">Experiencia</h2>
       <ul class="timeline">
         <li>
           <div class="timeline-date">Mar – Jun 2025</div>
           <div class="timeline-content">
-            <h3>Desarrollador Full-Stack (Prácticas) — Indexa Geodata</h3>
-            <p>
+            <h3 data-i18n="exp1.title">Desarrollador Full-Stack (Prácticas) — Indexa Geodata</h3>
+            <p data-i18n="exp1.desc">
               Desarrollo de una aplicación web y móvil en Flutter, desplegada con Docker y
               actualmente en producción. Trabajé como parte del equipo de desarrollo,
               colaborando activamente en la implementación técnica del producto.
@@ -195,7 +196,7 @@
           <div class="timeline-date">2022</div>
           <div class="timeline-content">
             <h3>Campus 42 — Telefónica</h3>
-            <p>
+            <p data-i18n="exp2.desc">
               Participante en un campus intensivo de programación organizado por Telefónica
               (Málaga), centrado en resolución de problemas y trabajo en equipo bajo presión.
             </p>
@@ -207,27 +208,27 @@
 
   <section id="formacion" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Formación</h2>
+      <h2 class="section-title" data-i18n="education.title">Formación</h2>
       <ul class="timeline">
         <li>
           <div class="timeline-date">2026</div>
           <div class="timeline-content">
             <h3>BSc (Hons) Software Engineering</h3>
-            <p>York St John University — Reino Unido</p>
+            <p data-i18n="edu1.sub">York St John University — Reino Unido</p>
           </div>
         </li>
         <li>
           <div class="timeline-date">2023 – 2025</div>
           <div class="timeline-content">
-            <h3>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
-            <p>EUSA — Cámara de Comercio de Sevilla</p>
+            <h3 data-i18n="edu2.title">Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <p data-i18n="edu2.sub">EUSA — Cámara de Comercio de Sevilla</p>
           </div>
         </li>
         <li>
           <div class="timeline-date">2010 – 2021</div>
           <div class="timeline-content">
-            <h3>Educación británica previa</h3>
-            <p>British School de Córdoba y British School de Sevilla</p>
+            <h3 data-i18n="edu3.title">Educación británica previa</h3>
+            <p data-i18n="edu3.sub">British School de Córdoba y British School de Sevilla</p>
           </div>
         </li>
       </ul>
@@ -241,13 +242,13 @@
 
   <section id="contacto" class="section">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="contact-lead">¿Quieres hablar de una oportunidad o de alguno de estos proyectos? Escríbeme.</p>
+      <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+      <p class="contact-lead" data-i18n="contact.lead">¿Quieres hablar de una oportunidad o de alguno de estos proyectos? Escríbeme.</p>
       <ul class="contact-list">
         <li><a href="mailto:miguelpenalva26@gmail.com">miguelpenalva26@gmail.com</a></li>
         <li><a href="tel:+34635492392">+34 635 492 392</a></li>
         <li><a href="https://github.com/miguelpenalva26" target="_blank" rel="noopener">github.com/miguelpenalva26</a></li>
-        <li>Sevilla, España</li>
+        <li data-i18n="contact.location">Sevilla, España</li>
       </ul>
     </div>
   </section>
@@ -260,6 +261,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
